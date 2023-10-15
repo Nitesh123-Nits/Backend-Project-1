@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Evens</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(245, 244, 232);
+            font-family: 'Courier New', Courier, monospace;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+        }
+
+        input {
+            padding: 1rem;
+            border: 2px solid #c48f09;
+            font-weight: 600;
+            color: crimson;
+        }
+
+        button {
+            background-color: #c48f09;
+            color: rgb(245, 244, 221);
+            padding: .7rem;
+            font-size: clamp(1rem, 1vw, 1.5rem);
+            font-weight: bold;
+            border: 0;
+            width: 140px;
+            display: block;
+            transition: .4s ease-in-out;
+            margin-top: 1rem;
+        }
+
+
+        button:hover {
+            background-color: rgb(245, 244, 221);
+            color: #c48f09;
+            outline: 2px solid #c48f09;
+        }
+
+        label {
+            display: block;
+
+            font-weight: 600;
+            font-size: clamp(1rem, 2vw, 2rem);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sum of Evens</h1>
+    <form action="/sum_of_evens" method="post">
+        <label for="numbers">Enter numbers (comma-separated): </label>
+        <input type="text" id="numbers" name="numbers" required>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+
+</html>
